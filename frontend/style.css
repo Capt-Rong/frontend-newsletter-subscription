@@ -1,0 +1,195 @@
+/* global */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+input {
+    outline: none;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--blue-700);
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* card */
+.card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    overflow: hidden;
+    padding: 2rem;
+    border-radius: 2rem;
+    background-color: var(--white);
+    box-shadow: 0px 15px 60px rgba(0, 0, 0, 0.25);
+}
+
+.image-container {
+    width: 400px;
+    height: 593px;
+    background-image: url(../public/images/illustration-sign-up-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: auto;
+    overflow: hidden;
+}
+
+
+/* text-container */
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 376px;
+}
+
+/* card-header */
+
+.card-header {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+}
+
+
+/* card-list */
+
+.card-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.card-list-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+/* card form */
+#form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+
+.email-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.email-input {
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--grey);
+    color: var(--blue-800);
+}
+
+.email-input:placeholder {
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0px;
+    color: var(--grey);
+}
+
+.email-input:focus {
+    border: 1px solid dodgerblue;
+}
+
+
+.card-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 4em;
+    border-radius: 0.5rem;
+    background-color: var(--blue-800);
+    border: none;
+    color: var(--white);
+    cursor: pointer;
+}
+
+/* success */
+.success {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 504px;
+    height: 520px;
+    padding: 4rem;
+    border-radius: 2.25rem;
+    background-color: var(--white);
+    box-shadow: 0px 15px 60px rgba(0, 0, 0, 0.25);
+}
+
+.success-icon {
+    width: 4rem;
+    height: 4rem;
+    object-fit: cover;
+}
+
+/* error */
+.error {
+    background-color: #FFE7E6;
+    border: 1px solid var(--red);
+    color: var(--red);
+}
+
+.error::placeholder {
+  color: var(--red);
+  opacity: 1; /* Safari 可能需要這個才能正確顯示顏色 */
+}
+
+
+.dismiss-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 4em;
+    border-radius: 0.5rem;
+    background-color: var(--blue-800);
+    border: none;
+    color: var(--white);
+    transition: all ease-out 0.2s;
+}
+
+.dismiss-button:hover {
+    background: linear-gradient(#FF6A3A, #ff527b);
+}
+
+/* hidden */
+.hidden {
+    display: none;
+}
+

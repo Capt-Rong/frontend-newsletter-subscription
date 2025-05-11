@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../public/images/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="variable.css">
+    <link rel="stylesheet" href="rwd.css">
+    <title>Newsletter subscription</title>
+</head>
+<body>
+    <main class="container">
+        <h1 class="visually-hidden">Newsletter subscription</h1>
+        <!-- subscription -->
+        <article class="card">
+            <section class="text-container">
+                <header class="card-header">
+                    <h2 class="card-title text-1 bold blue-800">Stay updated!</h2>
+                    <p class="card-text text-2 regular blue-800">Join 60,000+ product managers receiving monthly updates on:</p>
+                </header>
+                <ul class="card-list">
+                    <li class="card-list-item">
+                        <img src="../public/images/icon-list.svg" alt="icon-list">
+                        <p class="card-list-text text-2 regular blue-800">Product discovery and building what matters</p>
+                    </li>
+                    <li class="card-list-item">
+                        <img src="../public/images/icon-list.svg" alt="icon-list">
+                        <p class="card-list-text text-2 regular blue-800">Measuring to ensure updates is a success</p>
+                    </li>
+                    <li class="card-list-item">
+                        <img src="../public/images/icon-list.svg" alt="icon-list">
+                        <p class="card-list-text text-2 regular blue-800">And much more!</p>
+                    </li>
+                </ul>
+                <form action="" id="form" novalidate>
+                    <div class="form-group">
+                        <div class="email-section">
+                            <label for="email" class="text-3 bold blue-800">Email address</label>
+                            <span class="error-message text-3 bold red hidden">Vaild email required</span>
+                        </div>
+                        <input type="email" id="email" name="email" placeholder="email@company.com" class="email-input text-2 regular blue-800" required autocomplete="off">
+                    </div>
+                    <button type="submit" class="card-button text-2 bold">Subscribe to monthly newsletter</button>
+                </form>
+            </section>
+            <section class="image-container">
+            </section>            
+        </article>
+        <!-- success -->
+        <article id="success" class="success hidden">
+            <img src="../public/images/icon-success.svg" alt="icon-success" class="success-icon">
+            <h2 class="success-title text-1 bold blue-800">Thanks for subscribing!</h2>
+            <p class="success-text text-2 regular blue-800">A confirmation mail has been sent to <span class="success-email red bold" id="success-email">test@gmail.com</span>
+                Please open it and click the button inside to confirm your subscription.
+            </p>
+            <button class="dismiss-button text-2 bold white" id="dismiss-button">Dismiss message</button>
+        </article>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
