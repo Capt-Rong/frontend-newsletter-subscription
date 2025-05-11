@@ -1,0 +1,38 @@
+@media (max-width: 768px) {
+    .card {
+        flex-direction: column;
+        gap: 2.5rem;
+        width: 608px;
+        padding: 2.5rem;
+    }
+    .image-container {
+        order: -1; /* ✅ 排到最上層 */
+        width: 528px;
+        height: 358px ;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 0.5rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .card {
+        width: 100%;
+        padding: 1rem;
+        border-radius: 0;
+    }
+    .image-container{
+        width: 100%;
+        max-height: 284px;
+        border-start-start-radius: 0px;
+        border-end-end-radius: 0.5rem;
+    }
+    .card-title {
+        font-size: 40px;
+        line-height: 1;
+    }
+    .text-container {
+        max-width: 326px;
+    }
+}
