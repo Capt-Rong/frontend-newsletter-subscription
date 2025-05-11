@@ -36,28 +36,11 @@ form.addEventListener('submit', (e) => {
         errorMessage.classList.remove('hidden');
         emailInput.classList.add('error');
         return;
-    } else {
-        //  show success message
-        //  send email to backend API using fetch:
-        //     method: POST
-        //     url: /api/subscribe
-        //     body: JSON.stringify({ email })
-        console.log('Backend has received email succesfully!')
-        fetch('http://localhost:3000/api/subscribe', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ email }),
-        }) .then(res => res.json())
-        .then(email => {
-            console.log('✅ Server :', email);
-            card.classList.add('hidden');
-            successSection.classList.remove('hidden');
-            successMail.textContent = email;
-        })
-        .catch(err => {
-            console.error('❌ Failed:', err.message);
-        });
-    }
+    } 
+    card.classList.add('hidden');
+    successSection.classList.remove('hidden');
+    successMail.textContent = email;
+        
 })
 
 
